@@ -7,7 +7,8 @@ def _phi(x):
 
 def price_american_mc_ls(option_type,S0,K,r,sigma,T,n_steps=50,n_sims=100000,seed=None):
     paths = simulate_gbm_paths(S0,r,sigma,T,n_steps,n_sims,method='exact',seed=seed)
-    dt=T/n_steps; df=math.exp(-r*dt)
+    dt=T/n_steps
+    df=math.exp(-r*dt)
     payoff = (lambda s: np.maximum(s-K,0.0)) if option_type=='call' else (lambda s: np.maximum(K-s,0.0))
     cf = payoff(paths[:,-1])
     for t in range(n_steps-1,0,-1):

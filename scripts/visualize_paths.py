@@ -12,10 +12,14 @@ def visualize_paths(S0=100.0,r=0.02,sigma=0.2,T=1.0,n_steps=252,n_sims=20,seed=7
         plt.plot(t, paths[i], alpha=0.7)
     if barrier is not None:
         plt.axhline(barrier, linestyle='--')
-    plt.xlabel('Time (years)'); plt.ylabel('Price'); plt.title('Sample GBM Paths'); plt.tight_layout()
+    plt.xlabel('Time (years)')
+    plt.ylabel('Price')
+    plt.title('Sample GBM Paths')
+    plt.tight_layout()
     out = os.path.join(os.path.dirname(__file__), '..', 'assets', 'sample_paths.png')
     os.makedirs(os.path.join(os.path.dirname(__file__), '..', 'assets'), exist_ok=True)
-    plt.savefig(out, dpi=160); print('Saved', out)
+    plt.savefig(out, dpi=160)
+    print('Saved', out)
 
 if __name__=='__main__':
     visualize_paths()
