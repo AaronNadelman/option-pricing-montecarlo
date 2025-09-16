@@ -1,5 +1,9 @@
 [tool.ruff]
 line-length = 100
+exclude = [
+    "notebooks/*",
+    "tests/*",
+]
 
 [tool.ruff.lint]
 select = ["E", "F"]
