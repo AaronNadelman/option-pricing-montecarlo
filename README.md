@@ -100,3 +100,4 @@ Plots and screenshots are generated in the `assets/` folder.
 ## 📜 License
 
 MIT License.
+
