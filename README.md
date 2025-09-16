@@ -1,86 +1,102 @@
-# Option Pricing with Monte Carlo Simulation (v0.2.0)
+# Option Pricing with Monte Carlo & Black–Scholes
 
-## Overview
-This project provides a full implementation of **European option pricing** using both the closed-form **Black–Scholes model** and **Monte Carlo simulation techniques**. It further extends to Greeks, path-dependent options, and quasi-Monte Carlo.
+[![CI](https://github.com/LinShuyue2003/option-pricing-montecarlo/actions/workflows/ci.yml/badge.svg)](https://github.com/LinShuyue2003/option-pricing-montecarlo/actions)
+[![Docs](https://github.com/LinShuyue2003/option-pricing-montecarlo/actions/workflows/docs.yml/badge.svg)](https://linshuyue2003.github.io/option-pricing-montecarlo/)
 
-## Core Features (from v0.1.0)
-- Black–Scholes closed-form formulas for European calls and puts.
-- Monte Carlo simulation of Geometric Brownian Motion under the risk-neutral measure.
-- Variance reduction: antithetic variates, control variates.
-- Error and convergence analysis with plots.
-- Unit tests and CI integration.
-
-## Extended Features (new in v0.2.0)
-- **Greeks**: Delta, Gamma, Vega, Theta, Rho (closed-form and MC approximations).
-- **Asian options**: Monte Carlo pricing of arithmetic-average Asian calls.
-- **Quasi-Monte Carlo**: Sobol sequence sampling for faster convergence.
-- New Jupyter notebooks demonstrating these extensions.
+A self-contained Python project showcasing **financial engineering techniques** for option pricing, implemented from scratch with **clear, well-documented code**.
 
 ---
 
-## Quick Start
+## ✨ Features Overview
 
-### 1. Create a virtual environment and install dependencies
+| Feature                        | Status | Example Script |
+|--------------------------------|--------|----------------|
+| Black–Scholes closed-form       | ✔      | `src/black_scholes.py` |
+| European options (MC)           | ✔      | `examples/cli_example.py` |
+| Variance reduction (antithetic, control variate) | ✔ | built-in |
+| Asian options (MC)              | ✔      | `examples/example_asian.py` |
+| Barrier options (knock-out)     | ✔      | `examples/example_barrier.py` |
+| American options (Longstaff–Schwartz) | ✔ | `examples/example_american_ls.py` |
+| Quasi-Monte Carlo (Sobol)       | ✔      | `examples/example_quasi_mc.py` |
+| Greeks (Delta, Gamma, Vega, Theta, Rho) | ✔ | `examples/example_greeks.py` |
+| Performance acceleration (Numba) | ✔     | `examples/example_numba_speed.py` |
+| Visualization of GBM paths      | ✔      | `scripts/visualize_paths.py` |
+| Docs website (MkDocs Material)  | ✔      | `docs/` |
+
+---
+
+## 🚀 Quick Start
+
 ```bash
+# 1. Create virtual environment
 python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+# Windows:
+.venv\Scripts\activate
+# macOS/Linux:
+# source .venv/bin/activate
 
+# 2. Install dependencies
 pip install -r requirements.txt
-```
 
-### 2. Run a simple CLI example (European option)
-```bash
+# 3. Run a CLI example (European call with MC vs Black–Scholes)
 python examples/cli_example.py --type call --S0 100 --K 100 --r 0.02 --sigma 0.2 --T 1 --n_sims 100000 --antithetic
-```
 
-### 3. Generate error and convergence plots
-```bash
+# 4. Run extended examples
+python examples/example_asian.py          # Asian option
+python examples/example_greeks.py         # Greeks
+python examples/example_quasi_mc.py       # Quasi-MC (Sobol)
+python examples/example_barrier.py        # Barrier option
+python examples/example_american_ls.py    # American option (LS)
+python examples/example_numba_speed.py    # Numba acceleration
+
+# 5. Generate validation plot
 python scripts/validate.py
-```
 
-### 4. Try extended features
-Run the following examples:
-```bash
-python examples/example_greeks.py
-python examples/example_asian.py
-python examples/example_quasi_mc.py
+# 6. Preview documentation site locally
+mkdocs serve
 ```
-
-### 5. Run tests
-```bash
-pytest -q
-```
-
-### 6. Explore notebooks
-- `notebooks/01_validate_mc_vs_bs.ipynb` — validation baseline  
-- `notebooks/02_greeks_and_asian.ipynb` — Greeks and Asian option demo  
-- `notebooks/03_quasi_mc.ipynb` — Quasi-MC demo  
 
 ---
 
-## Repository Structure
-- `src/black_scholes.py` — Closed-form BS model
-- `src/mc_pricing.py` — Monte Carlo pricing engine
-- `src/greeks.py` — Greeks calculations
-- `src/asian_option.py` — Asian option MC pricing
-- `src/quasi_mc.py` — Sobol quasi-MC pricing
-- `examples/cli_example.py` — CLI usage example
-- `examples/example_greeks.py` — Greeks demo
-- `examples/example_asian.py` — Asian option demo
-- `examples/example_quasi_mc.py` — Quasi-MC demo
-- `scripts/validate.py` — validation and convergence plots
-- `tests/` — unit tests for all modules
-- `notebooks/` — reproducibility demos
+## 📖 Documentation
+
+Full documentation with explanations for **non-finance readers** is available in [`docs/`](./docs).  
+A live version is deployed on **GitHub Pages** via MkDocs + Material theme.
 
 ---
 
-## Resume Highlights
-- Implemented Monte Carlo simulation for option pricing, with deviation <2% from Black–Scholes benchmark.
-- Extended to compute Greeks analytically and numerically.
-- Demonstrated path-dependent Asian option pricing via Monte Carlo.
-- Applied quasi-Monte Carlo (Sobol sequences) to accelerate convergence.
+## 📝 Version Highlights
+
+### v0.3.0
+- Barrier options (knock-out) via Monte Carlo.
+- American options using Longstaff–Schwartz regression.
+- Numba acceleration with 10× potential speedup.
+- Docs website with MkDocs Material.
+- Visualization script for sample GBM paths.
+
+### v0.2.0
+- Asian options.
+- Greeks.
+- Quasi-Monte Carlo with Sobol sequences.
+- Extended variance reduction examples.
+
+### v0.1.0
+- Black–Scholes closed-form pricing.
+- Monte Carlo pricing for European options.
+- Variance reduction techniques and validation notebook.
 
 ---
 
-## License
-MIT License
+## 📊 Example Output
+
+- **Convergence curve** (MC vs BS)  
+- **GBM sample paths**  
+- **Performance benchmark (NumPy vs Numba)**  
+
+Plots and screenshots are generated in the `assets/` folder.
+
+---
+
+## 📜 License
+
+MIT License.

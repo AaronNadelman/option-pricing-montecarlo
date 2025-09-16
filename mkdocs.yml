@@ -1,0 +1,16 @@
+site_name: Option Pricing Monte Carlo
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Models:
+    - Black–Scholes: models/black_scholes.md
+    - Monte Carlo: models/monte_carlo.md
+  - Options:
+    - European: options/european.md
+    - Asian: options/asian.md
+    - Barrier: options/barrier.md
+    - American (LS): options/american.md
+  - Variance Reduction: variance/variance-reduction.md
+  - Performance: performance/acceleration.md
