@@ -1,5 +1,5 @@
 import math
-from black_scholes import d1_d2, _norm_cdf, call_price, put_price
+from black_scholes import d1_d2, _norm_cdf
 
 def call_greeks(S0, K, r, sigma, T):
     """Return Delta, Gamma, Vega, Theta, Rho for a European call."""

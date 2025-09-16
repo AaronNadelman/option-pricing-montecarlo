@@ -1,4 +1,5 @@
-import math, numpy as np
+import math
+import numpy as np
 from scipy.stats import qmc
 
 def sobol_normals(n_sims, dim=1, scramble=True, seed=None):

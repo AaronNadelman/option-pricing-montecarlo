@@ -1,4 +1,5 @@
-import os, sys
+import os
+import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "src"))
 
 from asian_option import price_asian_call_mc
