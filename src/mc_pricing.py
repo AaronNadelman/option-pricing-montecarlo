@@ -1,6 +1,6 @@
 import math
 import numpy as np
-from typing import Literal, Tuple
+from typing import Literal
 
 import black_scholes as bs
 from paths import simulate_gbm_terminal, simulate_gbm_paths
