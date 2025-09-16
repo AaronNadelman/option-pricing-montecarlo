@@ -1,3 +1,6 @@
+import os
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 from src import asian_option
 
 def test_asian_call_mc():

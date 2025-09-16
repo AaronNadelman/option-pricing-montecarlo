@@ -1,3 +1,6 @@
+import os
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 from src import greeks, black_scholes
 
 def test_call_greeks_runs():
