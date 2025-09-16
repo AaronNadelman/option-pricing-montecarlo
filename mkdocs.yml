@@ -1,16 +1,21 @@
 site_name: Option Pricing Monte Carlo
+site_url: https://linshuyue2003.github.io/option-pricing-montecarlo/
 theme:
   name: material
+
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
   - Models:
-    - Black–Scholes: models/black_scholes.md
-    - Monte Carlo: models/monte_carlo.md
+      - Black–Scholes: models/black_scholes.md
+      - Monte Carlo: models/monte_carlo.md
   - Options:
-    - European: options/european.md
-    - Asian: options/asian.md
-    - Barrier: options/barrier.md
-    - American (LS): options/american.md
+      - European: options/european.md
+      - Asian: options/asian.md
+      - Barrier: options/barrier.md
+      - American (LS): options/american.md
   - Variance Reduction: variance/variance-reduction.md
   - Performance: performance/acceleration.md
+
+repo_url: https://github.com/LinShuyue2003/option-pricing-montecarlo
+repo_name: LinShuyue2003/option-pricing-montecarlo
