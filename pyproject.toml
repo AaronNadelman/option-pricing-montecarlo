@@ -4,5 +4,7 @@ target-version = ["py39", "py310", "py311"]
 
 [tool.ruff]
 line-length = 100
-select = ["E", "F", "I"]
-ignore = []
+
+[tool.ruff.lint]
+select = ["E", "F"]
+ignore = ["E501"]
