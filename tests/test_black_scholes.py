@@ -1,4 +1,6 @@
-import os, sys, math
+import os
+import sys
+import math
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 import black_scholes as bs
 

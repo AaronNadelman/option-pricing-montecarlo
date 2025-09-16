@@ -1,4 +1,5 @@
-import os, sys
+import os
+import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 from mc_pricing import price_european_mc, bs_price, relative_error
 
